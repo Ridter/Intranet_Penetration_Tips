@@ -156,63 +156,63 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 ## 信息搜集 
 ### 开源情报信息收集（OSINT） 
 #### github 
-
-Github_Nuggests（自动爬取Github上文件敏感信息泄露） :https://github.com/az0ne/Github_Nuggests
-GSIL（能够实现近实时（15分钟内）的发现Github上泄露的信息） :https://github.com/FeeiCN/GSIL
-x-patrol(小米团队的):https://github.com/MiSecurity/x-patrol
+* Github_Nuggests（自动爬取Github上文件敏感信息泄露） :https://github.com/az0ne/Github_Nuggests
+* GSIL（能够实现近实时（15分钟内）的发现Github上泄露的信息） :https://github.com/FeeiCN/GSIL
+* x-patrol(小米团队的):https://github.com/MiSecurity/x-patrol
 
 #### whois查询/注册人反查/邮箱反查/相关资产
 
-站长之家:http://whois.chinaz.com/?DomainName=target.com&ws=
-爱站:https://whois.aizhan.com/target.com/
-微步在线:https://x.threatbook.cn/
-IP反查:https://dns.aizhan.com/
-天眼查:https://www.tianyancha.com/
-虎妈查:http://www.whomx.com/
-历史漏洞查询 :
-* 在线查询:http://wy.zone.ci/
-* 自搭建:https://github.com/hanc00l/wooyun_publi/
+* 站长之家:http://whois.chinaz.com/?DomainName=target.com&ws=
+* 爱站:https://whois.aizhan.com/target.com/
+* 微步在线:https://x.threatbook.cn/
+* IP反查:https://dns.aizhan.com/
+* 天眼查:https://www.tianyancha.com/
+* 虎妈查:http://www.whomx.com/
+* 历史漏洞查询 :
+    * 在线查询:http://wy.zone.ci/
+    * 自搭建:https://github.com/hanc00l/wooyun_publi/
 
 #### google hacking 
  
 ### 创建企业密码字典 
 #### 字典列表 
-passwordlist:https://github.com/lavalamp-/password-lists
-猪猪侠字典:https://pan.baidu.com/s/1dFJyedz
+* passwordlist:https://github.com/lavalamp-/password-lists
+* 猪猪侠字典:https://pan.baidu.com/s/1dFJyedz
 [Blasting_dictionary](https://github.com/rootphantomer/Blasting_dictionary)（分享和收集各种字典，包括弱口令，常用密码，目录爆破。数据库爆破，编辑器爆破，后台爆破等） 
-针对特定的厂商，重点构造厂商相关域名的字典
+* 针对特定的厂商，重点构造厂商相关域名的字典
 ```
 ['%pwd%123','%user%123','%user%521','%user%2017','%pwd%321','%pwd%521','%user%321','%pwd%123!','%pwd%123!@#','%pwd%1234','%user%2016','%user%123$%^','%user%123!@#','%pwd%2016','%pwd%2017','%pwd%1!','%pwd%2@','%pwd%3#','%pwd%123#@!','%pwd%12345','%pwd%123$%^','%pwd%!@#456','%pwd%123qwe','%pwd%qwe123','%pwd%qwe','%pwd%123456','%user%123#@!','%user%!@#456','%user%1234','%user%12345','%user%123456','%user%123!']
 ```
-#### 密码生成 
 
-GenpAss（中国特色的弱口令生成器): https://github.com/RicterZ/genpAss/
-passmaker（可以自定义规则的密码字典生成器） :https://github.com/bit4woo/passmaker
-pydictor（强大的密码生成器) ：https://github.com/LandGrey/pydictor
+####密码生成 
+
+* GenpAss（中国特色的弱口令生成器: https://github.com/RicterZ/genpAss/
+* passmaker（可以自定义规则的密码字典生成器） ：https://github.com/bit4woo/passmaker
+* pydictor（强大的密码生成器） ：https://github.com/LandGrey/pydictor
 
 #### 邮箱列表获取  
 
-theHarvester ：https://github.com/laramies/theHarvester
-获取一个邮箱以后导出通讯录 
-LinkedInt :https://github.com/mdsecactivebreach/LinkedInt
-Mailget：https://github.com/Ridter/Mailget
+* theHarvester ：https://github.com/laramies/theHarvester
+* 获取一个邮箱以后导出通讯录 
+* LinkedInt :https://github.com/mdsecactivebreach/LinkedInt
+* Mailget：https://github.com/Ridter/Mailget
 
 #### 对企业外部相关信息进行搜集
 ##### 子域名获取 
-Layer子域名挖掘机4.2纪念版 
-subDomainsBrute ：https://github.com/lijiejie/subDomainsBrute
-wydomain ：https://github.com/ring04h/wydomain
-Sublist3r ：https://github.com/aboul3la/Sublist3r
-site:target.com:https://www.google.com
-Github代码仓库 
-抓包分析请求返回值(跳转/文件上传/app/api接口等) 
-站长帮手links等在线查询网站 
-域传送漏洞 
-* Linux
+* Layer子域名挖掘机4.2纪念版 
+* subDomainsBrute ：https://github.com/lijiejie/subDomainsBrute
+* wydomain ：https://github.com/ring04h/wydomain
+* Sublist3r ：https://github.com/aboul3la/Sublist3r
+* site:target.com:https://www.google.com
+* Github代码仓库 
+* 抓包分析请求返回值(跳转/文件上传/app/api接口等) 
+* 站长帮手links等在线查询网站 
+* 域传送漏洞 
+    * Linux
 ```
 dig @ns.example.com example=.com AXFR 
 ```
-* Windows
+    * Windows
 ```
 nslookup -type=ns xxx.yyy.cn #查询解析某域名的DNS服务器
 nslookup #进入nslookup交互模式
@@ -220,19 +220,19 @@ server dns.domian.com #指定dns服务器
 ls xxx.yyy.cn #列出域信息
 ```
 
-GetDomainsBySSL.py :https://note.youdao.com/ynoteshare1/index.html?id=247d97fc1d98b122ef9804906356d47a&type=note#/
-censys.io证书 :https://censys.io/certificates?q=target.com
-crt.sh证书查询:https://crt.sh/?q=%25.target.com
-shadon :https://www.shodan.io/
-zoomeye :https://www.zoomeye.org/
-fofa :https://fofa.so/
-censys：https://censys.io/
-dnsdb.io :https://dnsdb.io/zh-cn/search?q=target.com
-api.hackertarget.com :http://api.hackertarget.com/reversedns/?q=target.com
-community.riskiq.com :https://community.riskiq.com/Search/target.com
-subdomain3 :https://github.com/yanxiu0614/subdomain3
-FuzzDomain :https://github.com/Chora10/FuzzDomain
-dnsdumpster.com :https://dnsdumpster.com/
+* GetDomainsBySSL.py :https://note.youdao.com/ynoteshare1/index.html?id=247d97fc1d98b122ef9804906356d47a&type=note#/
+* censys.io证书 :https://censys.io/certificates?q=target.com
+* crt.sh证书查询:https://crt.sh/?q=%25.target.com
+* shadon :https://www.shodan.io/
+* zoomeye :https://www.zoomeye.org/
+* fofa :https://fofa.so/
+* censys：https://censys.io/
+* dnsdb.io :https://dnsdb.io/zh-cn/search?q=target.com
+* api.hackertarget.com :http://api.hackertarget.com/reversedns/?q=target.com
+* community.riskiq.com :https://community.riskiq.com/Search/target.com
+* subdomain3 :https://github.com/yanxiu0614/subdomain3
+* FuzzDomain :https://github.com/Chora10/FuzzDomain
+* dnsdumpster.com :https://dnsdumpster.com/
 
 ## 进入内网 
 
