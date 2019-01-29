@@ -156,6 +156,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 ## 信息搜集 
 ### 开源情报信息收集（OSINT） 
 #### github 
+
 Github_Nuggests（自动爬取Github上文件敏感信息泄露） :https://github.com/az0ne/Github_Nuggests
 GSIL（能够实现近实时（15分钟内）的发现Github上泄露的信息） :https://github.com/FeeiCN/GSIL
 x-patrol(小米团队的):https://github.com/MiSecurity/x-patrol
@@ -183,11 +184,11 @@ passwordlist:https://github.com/lavalamp-/password-lists
 ```
 ['%pwd%123','%user%123','%user%521','%user%2017','%pwd%321','%pwd%521','%user%321','%pwd%123!','%pwd%123!@#','%pwd%1234','%user%2016','%user%123$%^','%user%123!@#','%pwd%2016','%pwd%2017','%pwd%1!','%pwd%2@','%pwd%3#','%pwd%123#@!','%pwd%12345','%pwd%123$%^','%pwd%!@#456','%pwd%123qwe','%pwd%qwe123','%pwd%qwe','%pwd%123456','%user%123#@!','%user%!@#456','%user%1234','%user%12345','%user%123456','%user%123!']
 ```
-####密码生成 
+#### 密码生成 
 
-GenpAss（中国特色的弱口令生成器: https://github.com/RicterZ/genpAss/
-passmaker（可以自定义规则的密码字典生成器） ：https://github.com/bit4woo/passmaker
-pydictor（强大的密码生成器） ：https://github.com/LandGrey/pydictor
+GenpAss（中国特色的弱口令生成器): https://github.com/RicterZ/genpAss/
+passmaker（可以自定义规则的密码字典生成器） :https://github.com/bit4woo/passmaker
+pydictor（强大的密码生成器) ：https://github.com/LandGrey/pydictor
 
 #### 邮箱列表获取  
 
