@@ -150,8 +150,6 @@ Table of Contents
   * [msf](#msf)
   * [3389登陆记录清除](#3389%E7%99%BB%E9%99%86%E8%AE%B0%E5%BD%95%E6%B8%85%E9%99%A4)
 
-Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
-
 
 ## 信息搜集 
 ### 开源情报信息收集（OSINT） 
