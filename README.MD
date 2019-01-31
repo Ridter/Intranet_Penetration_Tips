@@ -232,6 +232,7 @@ ls xxx.yyy.cn #列出域信息
 * subdomain3 :https://github.com/yanxiu0614/subdomain3
 * FuzzDomain :https://github.com/Chora10/FuzzDomain
 * dnsdumpster.com :https://dnsdumpster.com/
+* phpinfo.me :https://phpinfo.me/domain/
 
 ## 进入内网 
 
