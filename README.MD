@@ -168,7 +168,7 @@ Table of Contents
 * 虎妈查:http://www.whomx.com/
 * 历史漏洞查询 :
     * 在线查询:http://wy.zone.ci/
-    * 自搭建:https://github.com/hanc00l/wooyun_publi/
+    * 自搭建:https://github.com/hanc00l/wooyun_public/
 
 #### google hacking 
  
