@@ -13,6 +13,7 @@ Table of Contents
   * [创建企业密码字典](#%E5%88%9B%E5%BB%BA%E4%BC%81%E4%B8%9A%E5%AF%86%E7%A0%81%E5%AD%97%E5%85%B8)
     * [字典列表](#%E5%AD%97%E5%85%B8%E5%88%97%E8%A1%A8)
     * [邮箱列表获取](#%E9%82%AE%E7%AE%B1%E5%88%97%E8%A1%A8%E8%8E%B7%E5%8F%96)
+    * [泄露密码查询](#%E6%B3%84%E9%9C%B2%E5%AF%86%E7%A0%81%E6%9F%A5%E8%AF%A2)
     * [对企业外部相关信息进行搜集](#%E5%AF%B9%E4%BC%81%E4%B8%9A%E5%A4%96%E9%83%A8%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E8%BF%9B%E8%A1%8C%E6%90%9C%E9%9B%86)
       * [子域名获取](#%E5%AD%90%E5%9F%9F%E5%90%8D%E8%8E%B7%E5%8F%96)
 * [进入内网](#%E8%BF%9B%E5%85%A5%E5%86%85%E7%BD%91)
@@ -194,6 +195,10 @@ Table of Contents
 * 获取一个邮箱以后导出通讯录 
 * LinkedInt :https://github.com/mdsecactivebreach/LinkedInt
 * Mailget：https://github.com/Ridter/Mailget
+
+#### 泄露密码查询
+* ghostproject: https://ghostproject.fr/
+* pwndb: https://pwndb2am4tzkvold.onion.to/
 
 #### 对企业外部相关信息进行搜集
 ##### 子域名获取 
