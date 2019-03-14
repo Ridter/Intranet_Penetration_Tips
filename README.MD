@@ -239,6 +239,7 @@ ls xxx.yyy.cn #列出域信息
 * FuzzDomain :https://github.com/Chora10/FuzzDomain
 * dnsdumpster.com :https://dnsdumpster.com/
 * phpinfo.me :https://phpinfo.me/domain/
+* dns开放数据接口 :https://dns.bufferover.run/dns?q=baidu.com
 
 ## 进入内网 
 
@@ -769,8 +770,8 @@ dsquery server && net time /domain------>列出该域内域控制器
 
 #### 提权 
 * windows内核漏洞提权
->检测类:[Windows-Exploit-Suggester](https://github.com/GDSSecurity/Windows-Exploit-Suggester),[WinSystemHelper](https://github.com/brianwrf/WinSystemHelper)
->利用类:[windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
+>检测类:[Windows-Exploit-Suggester](https://github.com/GDSSecurity/Windows-Exploit-Suggester),[WinSystemHelper](https://github.com/brianwrf/WinSystemHelper),[wesng](https://github.com/bitsadmin/wesng)
+>利用类:[windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)，[BeRoot](https://github.com/AlessandroZ/BeRoot.git)
 
 * 服务提权 
 >数据库服务，ftp服务等
