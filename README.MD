@@ -770,8 +770,8 @@ dsquery server && net time /domain------>列出该域内域控制器
 
 #### 提权 
 * windows内核漏洞提权
->检测类:[Windows-Exploit-Suggester](https://github.com/GDSSecurity/Windows-Exploit-Suggester),[WinSystemHelper](https://github.com/brianwrf/WinSystemHelper)
->利用类:[windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits),[提权辅助网页](https://bugs.hacking8.com/tiquan/)
+>检测类:[Windows-Exploit-Suggester](https://github.com/GDSSecurity/Windows-Exploit-Suggester),[WinSystemHelper](https://github.com/brianwrf/WinSystemHelper),[wesng](https://github.com/bitsadmin/wesng)
+>利用类:[windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)，[BeRoot](https://github.com/AlessandroZ/BeRoot.git)
 
 * 服务提权 
 >数据库服务，ftp服务等
