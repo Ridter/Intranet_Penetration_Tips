@@ -23,7 +23,7 @@ Table of Contents
   * [无线Wi\-Fi接入](#%E6%97%A0%E7%BA%BFwi-fi%E6%8E%A5%E5%85%A5)
 * [隐匿攻击](#%E9%9A%90%E5%8C%BF%E6%94%BB%E5%87%BB)
   * [Command and Control](#command-and-control)
-  * [Froting](#froting)
+  * [Fronting](#frotning)
   * [代理](#%E4%BB%A3%E7%90%86)
 * [内网跨边界应用](#%E5%86%85%E7%BD%91%E8%B7%A8%E8%BE%B9%E7%95%8C%E5%BA%94%E7%94%A8)
   * [内网跨边界转发](#%E5%86%85%E7%BD%91%E8%B7%A8%E8%BE%B9%E7%95%8C%E8%BD%AC%E5%8F%91)
@@ -288,7 +288,7 @@ ls xxx.yyy.cn #列出域信息
 * JavaScript :https://pentestlab.blog/2018/01/08/command-and-control-javascript/
 *  ... 
 
-### Froting 
+### Fronting 
 * [Domain Fronting ](https://evi1cg.me/archives/Domain_Fronting.html)
 * [Tor_Fronting.](https://evi1cg.me/archives/Tor_Fronting.html)
   
