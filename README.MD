@@ -1302,8 +1302,8 @@ Get-NetProcesses - gets the remote processes and owners on a remote server
 ```
 ##### BloodHound
 ##### 获取域内DNS信息
-[adidnsdump](https://github.com/dirkjanm/adidnsdump)
-[域渗透——DNS记录的获取](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-DNS%E8%AE%B0%E5%BD%95%E7%9A%84%E8%8E%B7%E5%8F%96/)
+* [adidnsdump](https://github.com/dirkjanm/adidnsdump)
+* [域渗透——DNS记录的获取](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-DNS%E8%AE%B0%E5%BD%95%E7%9A%84%E8%8E%B7%E5%8F%96/)
 ​            
 #### 获取域控的方法 
 ##### SYSVOL 
