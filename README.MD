@@ -121,6 +121,9 @@ Table of Contents
       * [4、常用端口类(扫描弱口令/端口爆破)](#4%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%B1%BB%E6%89%AB%E6%8F%8F%E5%BC%B1%E5%8F%A3%E4%BB%A4%E7%AB%AF%E5%8F%A3%E7%88%86%E7%A0%B4)
       * [5、端口合计所对应的服务](#5%E7%AB%AF%E5%8F%A3%E5%90%88%E8%AE%A1%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9C%8D%E5%8A%A1)
     * [信息搜集](#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86-1)
+      * [powerview.ps1](#powerview.ps1)
+      * [BloodHound](#BloodHound)
+      * [获取域内DNS信息](#%E8%8E%B7%E5%8F%96%E5%9F%9F%E5%86%85DNS%E4%BF%A1%E6%81%AF)
     * [获取域控的方法](#%E8%8E%B7%E5%8F%96%E5%9F%9F%E6%8E%A7%E7%9A%84%E6%96%B9%E6%B3%95)
       * [SYSVOL](#sysvol)
       * [MS14\-068 Kerberos](#ms14-068-kerberos)
@@ -1269,7 +1272,7 @@ webacoo
 ```
 ### 域渗透 
 #### 信息搜集 
-powerview.ps1 
+##### powerview.ps1 
 ```
 Get-NetDomain - gets the name of the current user's domain
 Get-NetForest - gets the forest associated with the current user's domain
@@ -1297,7 +1300,10 @@ Get-NetConnections - gets active connections to a specific server resource (shar
 Get-NetFiles - gets open files on a server
 Get-NetProcesses - gets the remote processes and owners on a remote server
 ```
-BloodHound
+##### BloodHound
+##### 获取域内DNS信息
+[adidnsdump](https://github.com/dirkjanm/adidnsdump)
+[域渗透——DNS记录的获取](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-DNS%E8%AE%B0%E5%BD%95%E7%9A%84%E8%8E%B7%E5%8F%96/)
 ​            
 #### 获取域控的方法 
 ##### SYSVOL 
