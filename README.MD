@@ -132,6 +132,8 @@ Table of Contents
       * [Kerberos的银票务](#kerberos%E7%9A%84%E9%93%B6%E7%A5%A8%E5%8A%A1)
       * [域服务账号破解](#%E5%9F%9F%E6%9C%8D%E5%8A%A1%E8%B4%A6%E5%8F%B7%E7%A0%B4%E8%A7%A3)
       * [凭证盗窃](#%E5%87%AD%E8%AF%81%E7%9B%97%E7%AA%83)
+      * [NTLM relay](#NTLM%20relay)
+      * [Kerberos委派](#Kerberos%E5%A7%94%E6%B4%BE)
       * [地址解析协议](#%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE)
     * [获取AD哈希](#%E8%8E%B7%E5%8F%96ad%E5%93%88%E5%B8%8C)
     * [AD持久化](#ad%E6%8C%81%E4%B9%85%E5%8C%96)
@@ -141,6 +143,9 @@ Table of Contents
       * [AdminSDHolder＆SDProp](#adminsdholdersdprop-)
       * [组策略](#%E7%BB%84%E7%AD%96%E7%95%A5)
       * [Hook PasswordChangeNotify](#hook-passwordchangenotify)
+      * [Kerberoasting后门](#Kerberoasting%E5%90%8E%E9%97%A8)
+      * [AdminSDHolder](#AdminSDHolder)
+      * [Delegation](#Delegation)
     * [TIPS](#tips)
     * [相关工具](#%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7)
   * [在远程系统上执行程序](#%E5%9C%A8%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F)
@@ -1325,7 +1330,7 @@ net use k: \pentest.comc$
 ```
 相关阅读 :
 * [Kerberos的工具包PyKEK](http://adsecurity.org/?p=676) 
-* [深入解读MS14-068漏洞](http://www.freebuf.com/vuls/56081.html) 
+* [深入解读MS14-068漏洞](http://www.freebuf.com/vuls/56081.html)
 * [Kerberos的安全漏洞](https://adsecurity.org/?p=541) 
 
 ##### SPN扫描 
@@ -1386,6 +1391,21 @@ tgsrepcrack.py wordlist.txt 1-MSSQLSvc~sql01.medin.local~1433-MYDOMAIN.LOCAL.kir
 ```
 ##### 凭证盗窃 
 从搜集的密码里面找管理员的密码 
+
+##### NTLM relay
+ * [One API call away from Domain Admin](https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/)
+ * [privexchange](https://github.com/dirkjanm/privexchange/)
+ * [Exchange2domain](https://github.com/ridter/exchange2domain)
+
+##### Kerberos委派
+ * [Wagging-the-Dog.html](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
+ * [s4u2pwnage](https://www.harmj0y.net/blog/activedirectory/s4u2pwnage/)
+ * [Attacking Kerberos Delegation](https://xz.aliyun.com/t/2931)
+ * [用打印服务获取域控](https://adsecurity.org/?p=4056)
+ * [Computer Takeover](https://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
+ * [Combining NTLM Relaying and Kerberos delegation](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
+ * [CVE-2019-1040](https://dirkjanm.io/exploiting-CVE-2019-1040-relay-vulnerabilities-for-rce-and-domain-admin/)
+
 ##### 地址解析协议 
 实在搞不定再搞ARP 
 ​    
@@ -1441,6 +1461,16 @@ https://adsecurity.org/?p=2716
 [策略对象在持久化及横向渗透中的应用](https://www.anquanke.com/post/id/86531) 
 ##### Hook PasswordChangeNotify 
 http://wooyun.jozxing.cc/static/drops/tips-13079.html 
+
+##### Kerberoasting后门
+[域渗透-Kerberoasting](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-Kerberoasting/)
+
+##### AdminSDHolder
+[Backdooring AdminSDHolder for Persistence](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/how-to-abuse-and-backdoor-adminsdholder-to-obtain-domain-admin-persistence)
+
+##### Delegation
+[Unconstrained Domain Persistence](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html#unconstrained-domain-persistence)
+
 #### TIPS 
 [《域渗透——Dump Clear-Text Password after KB2871997 installed》](https://github.com/3gstudent/Dump-Clear-Password-after-KB2871997-installed) 
 [《域渗透——Hook PasswordChangeNotify》](http://www.vuln.cn/6812) 
