@@ -1460,7 +1460,7 @@ mimikatz "privilege::debug" "misc::addsid bobafett ADSAdministrator"
 https://adsecurity.org/?p=2716 
 [策略对象在持久化及横向渗透中的应用](https://www.anquanke.com/post/id/86531) 
 ##### Hook PasswordChangeNotify 
-http://wooyun.jozxing.cc/static/drops/tips-13079.html 
+http://www.vuln.cn/6812
 
 ##### Kerberoasting后门
 [域渗透-Kerberoasting](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-Kerberoasting/)
