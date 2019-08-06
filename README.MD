@@ -780,6 +780,7 @@ dsquery server && net time /domain------>列出该域内域控制器
 #### 提权 
 * windows内核漏洞提权
 >检测类:[Windows-Exploit-Suggester](https://github.com/GDSSecurity/Windows-Exploit-Suggester),[WinSystemHelper](https://github.com/brianwrf/WinSystemHelper),[wesng](https://github.com/bitsadmin/wesng)
+
 >利用类:[windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)，[BeRoot](https://github.com/AlessandroZ/BeRoot.git)
 
 * 服务提权 
@@ -1051,7 +1052,8 @@ POC : https://github.com/3gstudent/Waitfor-Persistence
 * PowerPoint VBA add-ins
 
 >参考1 ：https://3gstudent.github.io/3gstudent.github.io/Use-Office-to-maintain-persistence/
-参考2 ：https://3gstudent.github.io/3gstudent.github.io/Office-Persistence-on-x64-operating-system/
+
+>参考2 ：https://3gstudent.github.io/3gstudent.github.io/Office-Persistence-on-x64-operating-system/
 
 
 ##### 22、[CLR](https://3gstudent.github.io/3gstudent.github.io/Use-CLR-to-maintain-persistence/)
@@ -1078,7 +1080,9 @@ HKCU\Software\Classes\Wow6432Node\CLSID{BCDE0395-E52F-467C-8E3D-C4579291692E}
 Explorer.exe在启动时会加载`c:\Windows\System32\fxsst.dll`(服务默认开启，用于传真服务)将payload.dll保存在`c:\Windows\fxsst.dll`，能够实现dll劫持，劫持Explorer.exe对`fxsst.dll`的加载
 ##### 27、特殊注册表键值 
 在注册表启动项创建特殊名称的注册表键值，用户正常情况下无法读取(使用Win32 API)，但系统能够执行(使用Native API)。
+
 [《渗透技巧——"隐藏"注册表的创建》](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%9A%90%E8%97%8F-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA/)
+
 [《渗透技巧——"隐藏"注册表的更多测试》](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%9A%90%E8%97%8F-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%9A%84%E6%9B%B4%E5%A4%9A%E6%B5%8B%E8%AF%95/)
 ##### 28、快捷方式后门 
 替换我的电脑快捷方式启动参数
@@ -1134,14 +1138,14 @@ nc -vv ip 7777
 ```
 ##### rootkit
 
-[openssh_rootkit](http://core.ipsecs.com/rootkit/patch-to-hack/0x06-openssh-5.9p1.patch.tar.gz)
-[Kbeast_rootkit ](http://core.ipsecs.com/rootkit/kernel-rootkit/ipsecs-kbeast-v1.tar.gz)
-Mafix + Suterusu rootkit
+* [openssh_rootkit](http://core.ipsecs.com/rootkit/patch-to-hack/0x06-openssh-5.9p1.patch.tar.gz)
+* [Kbeast_rootkit ](http://core.ipsecs.com/rootkit/kernel-rootkit/ipsecs-kbeast-v1.tar.gz)
+* Mafix + Suterusu rootkit
 
 ##### Tools
 
-[Vegile ](https://github.com/Screetsec/Vegile)
-[backdoor ](https://github.com/icco/backdoor)
+* [Vegile ](https://github.com/Screetsec/Vegile)
+* [backdoor ](https://github.com/icco/backdoor)
 
 ### WEB后门
 
@@ -1473,7 +1477,8 @@ http://www.vuln.cn/6812
 [Unconstrained Domain Persistence](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html#unconstrained-domain-persistence)
 
 #### TIPS 
-[《域渗透——Dump Clear-Text Password after KB2871997 installed》](https://github.com/3gstudent/Dump-Clear-Password-after-KB2871997-installed) 
+[《域渗透——Dump Clear-Text Password after KB2871997 installed》](https://github.com/3gstudent/Dump-Clear-Password-after-KB2871997-installed)
+
 [《域渗透——Hook PasswordChangeNotify》](http://www.vuln.cn/6812) 
 >可通过Hook PasswordChangeNotify实时记录域控管理员的新密码 
 
@@ -1483,10 +1488,10 @@ http://www.vuln.cn/6812
 [《域渗透——利用SYSVOL还原组策略中保存的密码》 ](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-%E5%88%A9%E7%94%A8SYSVOL%E8%BF%98%E5%8E%9F%E7%BB%84%E7%AD%96%E7%95%A5%E4%B8%AD%E4%BF%9D%E5%AD%98%E7%9A%84%E5%AF%86%E7%A0%81/)
 
 #### 相关工具 
-[BloodHound ](https://github.com/BloodHoundAD/BloodHound)
-[CrackMapExec ](https://github.com/byt3bl33d3r/CrackMapExec)
-[DeathStar](https://github.com/byt3bl33d3r/DeathStar) 
->利用过程：http://www.freebuf.com/sectool/160884.html 
+* [BloodHound ](https://github.com/BloodHoundAD/BloodHound)
+* [CrackMapExec ](https://github.com/byt3bl33d3r/CrackMapExec)
+* [DeathStar](https://github.com/byt3bl33d3r/DeathStar) 
+  >利用过程：http://www.freebuf.com/sectool/160884.html 
 
 ### 在远程系统上执行程序 
 * At 
