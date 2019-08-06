@@ -311,7 +311,8 @@ ls xxx.yyy.cn #列出域信息
 ### 内网跨边界转发 
 * [NC端口转发](https://blog.csdn.net/l_f0rm4t3d/article/details/24004555) 
 * [LCX端口转发 ](http://blog.chinaunix.net/uid-53401-id-4407931.html)
-* [nps](https://github.com/cnlh/nps)
+* [nps](https://github.com/cnlh/nps) -> 个人用觉得比较稳定 ～
+* [frp](https://github.com/fatedier/frp)
 * 代理脚本 
     1. [Tunna ](https://github.com/SECFORCE/Tunna)
     2. [Reduh ](https://github.com/sensepost/reDuh)
@@ -1495,6 +1496,7 @@ http://www.vuln.cn/6812
 * Smbexec 
 * Powershell remoting 
 * DCOM 
+* Winrm (https://github.com/Hackplayers/evil-winrm)
 
 ### IOT相关 
 * 1、路由器 [routersploit ](https://github.com/reverse-shell/routersploit)
