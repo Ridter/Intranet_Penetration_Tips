@@ -1,166 +1,6 @@
  Author: [Evi1cg](https://twitter.com/Evi1cg) 
  Blog: https://evi1cg.github.io
 
-
-Table of Contents
-=================
-
-* [信息搜集](#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86)
-  * [开源情报信息收集（OSINT）](#%E5%BC%80%E6%BA%90%E6%83%85%E6%8A%A5%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86osint)
-    * [github](#github)
-    * [whois查询/注册人反查/邮箱反查/相关资产](#whois%E6%9F%A5%E8%AF%A2%E6%B3%A8%E5%86%8C%E4%BA%BA%E5%8F%8D%E6%9F%A5%E9%82%AE%E7%AE%B1%E5%8F%8D%E6%9F%A5%E7%9B%B8%E5%85%B3%E8%B5%84%E4%BA%A7)
-    * [google hacking](#google-hacking)
-  * [创建企业密码字典](#%E5%88%9B%E5%BB%BA%E4%BC%81%E4%B8%9A%E5%AF%86%E7%A0%81%E5%AD%97%E5%85%B8)
-    * [字典列表](#%E5%AD%97%E5%85%B8%E5%88%97%E8%A1%A8)
-    * [邮箱列表获取](#%E9%82%AE%E7%AE%B1%E5%88%97%E8%A1%A8%E8%8E%B7%E5%8F%96)
-    * [泄露密码查询](#%E6%B3%84%E9%9C%B2%E5%AF%86%E7%A0%81%E6%9F%A5%E8%AF%A2)
-    * [对企业外部相关信息进行搜集](#%E5%AF%B9%E4%BC%81%E4%B8%9A%E5%A4%96%E9%83%A8%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E8%BF%9B%E8%A1%8C%E6%90%9C%E9%9B%86)
-      * [子域名获取](#%E5%AD%90%E5%9F%9F%E5%90%8D%E8%8E%B7%E5%8F%96)
-* [进入内网](#%E8%BF%9B%E5%85%A5%E5%86%85%E7%BD%91)
-  * [基于企业弱账号漏洞](#%E5%9F%BA%E4%BA%8E%E4%BC%81%E4%B8%9A%E5%BC%B1%E8%B4%A6%E5%8F%B7%E6%BC%8F%E6%B4%9E)
-  * [基于系统漏洞进入](#%E5%9F%BA%E4%BA%8E%E7%B3%BB%E7%BB%9F%E6%BC%8F%E6%B4%9E%E8%BF%9B%E5%85%A5)
-  * [网站应用程序渗透](#%E7%BD%91%E7%AB%99%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%B8%97%E9%80%8F)
-  * [无线Wi\-Fi接入](#%E6%97%A0%E7%BA%BFwi-fi%E6%8E%A5%E5%85%A5)
-* [隐匿攻击](#%E9%9A%90%E5%8C%BF%E6%94%BB%E5%87%BB)
-  * [Command and Control](#command-and-control)
-  * [Fronting](#fronting)
-  * [代理](#%E4%BB%A3%E7%90%86)
-* [内网跨边界应用](#%E5%86%85%E7%BD%91%E8%B7%A8%E8%BE%B9%E7%95%8C%E5%BA%94%E7%94%A8)
-  * [内网跨边界转发](#%E5%86%85%E7%BD%91%E8%B7%A8%E8%BE%B9%E7%95%8C%E8%BD%AC%E5%8F%91)
-  * [内网跨边界代理穿透](#%E5%86%85%E7%BD%91%E8%B7%A8%E8%BE%B9%E7%95%8C%E4%BB%A3%E7%90%86%E7%A9%BF%E9%80%8F)
-    * [EW](#ew)
-    * [Termite](#termite)
-    * [代理脚本](#%E4%BB%A3%E7%90%86%E8%84%9A%E6%9C%AC)
-  * [shell反弹](#shell%E5%8F%8D%E5%BC%B9)
-  * [内网文件的传输和下载](#%E5%86%85%E7%BD%91%E6%96%87%E4%BB%B6%E7%9A%84%E4%BC%A0%E8%BE%93%E5%92%8C%E4%B8%8B%E8%BD%BD)
-  * [搭建 HTTP server](#%E6%90%AD%E5%BB%BA%20HTTP%20server)
-* [内网信息搜集](#%E5%86%85%E7%BD%91%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86)
-  * [本机信息搜集](#%E6%9C%AC%E6%9C%BA%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86)
-    * [1、用户列表](#1%E7%94%A8%E6%88%B7%E5%88%97%E8%A1%A8)
-    * [2、进程列表](#2%E8%BF%9B%E7%A8%8B%E5%88%97%E8%A1%A8)
-    * [3、服务列表](#3%E6%9C%8D%E5%8A%A1%E5%88%97%E8%A1%A8)
-    * [4、端口列表](#4%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8)
-    * [5、补丁列表](#5%E8%A1%A5%E4%B8%81%E5%88%97%E8%A1%A8)
-    * [6、本机共享](#6%E6%9C%AC%E6%9C%BA%E5%85%B1%E4%BA%AB)
-    * [7、本用户习惯分析](#7%E6%9C%AC%E7%94%A8%E6%88%B7%E4%B9%A0%E6%83%AF%E5%88%86%E6%9E%90)
-    * [8、获取当前用户密码工具](#8%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E5%B7%A5%E5%85%B7)
-      * [Windows](#windows)
-      * [Linux](#linux)
-  * [扩散信息收集](#%E6%89%A9%E6%95%A3%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86)
-    * [端口扫描](#%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F)
-      * [常用端口扫描工具](#%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7)
-    * [内网拓扑架构分析](#%E5%86%85%E7%BD%91%E6%8B%93%E6%89%91%E6%9E%B6%E6%9E%84%E5%88%86%E6%9E%90)
-    * [常见信息收集命令](#%E5%B8%B8%E8%A7%81%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%E5%91%BD%E4%BB%A4)
-  * [第三方信息收集](#%E7%AC%AC%E4%B8%89%E6%96%B9%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86)
-* [权限提升](#%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87)
-  * [Windows](#windows-1)
-    * [BypassUAC](#bypassuac)
-      * [常用方法](#%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95)
-      * [常用工具](#%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
-    * [提权](#%E6%8F%90%E6%9D%83)
-  * [Linux](#linux-1)
-    * [内核溢出提权](#%E5%86%85%E6%A0%B8%E6%BA%A2%E5%87%BA%E6%8F%90%E6%9D%83)
-    * [计划任务](#%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1)
-    * [SUID](#suid)
-    * [系统服务的错误权限配置漏洞](#%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%E7%9A%84%E9%94%99%E8%AF%AF%E6%9D%83%E9%99%90%E9%85%8D%E7%BD%AE%E6%BC%8F%E6%B4%9E)
-    * [不安全的文件/文件夹权限配置](#%E4%B8%8D%E5%AE%89%E5%85%A8%E7%9A%84%E6%96%87%E4%BB%B6%E6%96%87%E4%BB%B6%E5%A4%B9%E6%9D%83%E9%99%90%E9%85%8D%E7%BD%AE)
-    * [找存储的明文用户名，密码](#%E6%89%BE%E5%AD%98%E5%82%A8%E7%9A%84%E6%98%8E%E6%96%87%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81)
-* [权限维持](#%E6%9D%83%E9%99%90%E7%BB%B4%E6%8C%81)
-  * [系统后门](#%E7%B3%BB%E7%BB%9F%E5%90%8E%E9%97%A8)
-    * [Windows](#windows-2)
-      * [1、密码记录工具](#1%E5%AF%86%E7%A0%81%E8%AE%B0%E5%BD%95%E5%B7%A5%E5%85%B7)
-      * [2、常用的存储Payload位置](#2%E5%B8%B8%E7%94%A8%E7%9A%84%E5%AD%98%E5%82%A8payload%E4%BD%8D%E7%BD%AE)
-      * [3、Run/RunOnce Keys](#3runrunonce-keys)
-      * [4、BootExecute Key](#4bootexecute-key)
-      * [5、Userinit Key](#5userinit-key)
-      * [6、Startup Keys](#6startup-keys)
-      * [7、Services](#7services)
-      * [8、Browser Helper Objects](#8browser-helper-objects)
-      * [9、AppInit\_DLLs](#9appinit_dlls)
-      * [10、文件关联](#10%E6%96%87%E4%BB%B6%E5%85%B3%E8%81%94)
-      * [11、bitsadmin](#11bitsadmin)
-      * [12、mof ](#12mof-)
-      * [13、wmi](#13wmi)
-      * [14、Userland Persistence With Scheduled Tasks](#14userland-persistence-with-scheduled-tasks)
-      * [15、Netsh](#15netsh)
-      * [16、Shim](#16shim)
-      * [17、DLL劫持](#17dll%E5%8A%AB%E6%8C%81)
-      * [18、DoubleAgent ](#18doubleagent-)
-      * [19、waitfor\.exe ](#19waitforexe-)
-      * [20、AppDomainManager](#20appdomainmanager)
-      * [21、Office](#21office)
-      * [22、CLR](#22clr)
-      * [23、msdtc](#23msdtc)
-      * [24、Hijack CAccPropServicesClass and MMDeviceEnumerato](#24hijack-caccpropservicesclass-and-mmdeviceenumerato)
-      * [25、Hijack explorer\.exe](#25hijack-explorerexe)
-      * [26、Windows FAX DLL Injection](#26windows-fax-dll-injection)
-      * [27、特殊注册表键值](#27%E7%89%B9%E6%AE%8A%E6%B3%A8%E5%86%8C%E8%A1%A8%E9%94%AE%E5%80%BC)
-      * [28、快捷方式后门](#28%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E5%90%8E%E9%97%A8)
-      * [29、Logon Scripts](#29logon-scripts)
-      * [30、Password Filter DLL](#30password-filter-dll)
-      * [31、利用BHO实现IE浏览器劫持](#31%E5%88%A9%E7%94%A8bho%E5%AE%9E%E7%8E%B0ie%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8A%AB%E6%8C%81)
-    * [Linux](#linux-2)
-      * [crontab](#crontab)
-      * [硬链接sshd](#%E7%A1%AC%E9%93%BE%E6%8E%A5sshd)
-      * [SSH Server wrapper](#ssh-server-wrapper)
-      * [SSH keylogger](#ssh-keylogger)
-      * [Cymothoa\_进程注入backdoor](#cymothoa_%E8%BF%9B%E7%A8%8B%E6%B3%A8%E5%85%A5backdoor)
-      * [rootkit](#rootkit)
-      * [Tools](#tools)
-  * [WEB后门](#web%E5%90%8E%E9%97%A8)
-* [横向渗透](#%E6%A8%AA%E5%90%91%E6%B8%97%E9%80%8F)
-  * [端口渗透](#%E7%AB%AF%E5%8F%A3%E6%B8%97%E9%80%8F)
-    * [端口扫描](#%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F-1)
-    * [端口爆破](#%E7%AB%AF%E5%8F%A3%E7%88%86%E7%A0%B4)
-    * [端口弱口令](#%E7%AB%AF%E5%8F%A3%E5%BC%B1%E5%8F%A3%E4%BB%A4)
-    * [端口溢出](#%E7%AB%AF%E5%8F%A3%E6%BA%A2%E5%87%BA)
-    * [常见的默认端口](#%E5%B8%B8%E8%A7%81%E7%9A%84%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3)
-      * [1、web类(web漏洞/敏感目录)](#1web%E7%B1%BBweb%E6%BC%8F%E6%B4%9E%E6%95%8F%E6%84%9F%E7%9B%AE%E5%BD%95)
-      * [2、数据库类(扫描弱口令)](#2%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B1%BB%E6%89%AB%E6%8F%8F%E5%BC%B1%E5%8F%A3%E4%BB%A4)
-      * [3、特殊服务类(未授权/命令执行类/漏洞)](#3%E7%89%B9%E6%AE%8A%E6%9C%8D%E5%8A%A1%E7%B1%BB%E6%9C%AA%E6%8E%88%E6%9D%83%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E7%B1%BB%E6%BC%8F%E6%B4%9E)
-      * [4、常用端口类(扫描弱口令/端口爆破)](#4%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%B1%BB%E6%89%AB%E6%8F%8F%E5%BC%B1%E5%8F%A3%E4%BB%A4%E7%AB%AF%E5%8F%A3%E7%88%86%E7%A0%B4)
-      * [5、端口合计所对应的服务](#5%E7%AB%AF%E5%8F%A3%E5%90%88%E8%AE%A1%E6%89%80%E5%AF%B9%E5%BA%94%E7%9A%84%E6%9C%8D%E5%8A%A1)
-    * [信息搜集](#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86-1)
-      * [powerview.ps1](#powerview.ps1)
-      * [BloodHound](#BloodHound)
-      * [获取域内DNS信息](#%E8%8E%B7%E5%8F%96%E5%9F%9F%E5%86%85DNS%E4%BF%A1%E6%81%AF)
-    * [获取域控的方法](#%E8%8E%B7%E5%8F%96%E5%9F%9F%E6%8E%A7%E7%9A%84%E6%96%B9%E6%B3%95)
-      * [SYSVOL](#sysvol)
-      * [MS14\-068 Kerberos](#ms14-068-kerberos)
-      * [SPN扫描](#spn%E6%89%AB%E6%8F%8F)
-      * [Kerberos的黄金门票](#kerberos%E7%9A%84%E9%BB%84%E9%87%91%E9%97%A8%E7%A5%A8)
-      * [Kerberos的银票务](#kerberos%E7%9A%84%E9%93%B6%E7%A5%A8%E5%8A%A1)
-      * [域服务账号破解](#%E5%9F%9F%E6%9C%8D%E5%8A%A1%E8%B4%A6%E5%8F%B7%E7%A0%B4%E8%A7%A3)
-      * [凭证盗窃](#%E5%87%AD%E8%AF%81%E7%9B%97%E7%AA%83)
-      * [NTLM relay](#NTLM%20relay)
-      * [Kerberos委派](#Kerberos%E5%A7%94%E6%B4%BE)
-      * [地址解析协议](#%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE)
-    * [获取AD哈希](#%E8%8E%B7%E5%8F%96ad%E5%93%88%E5%B8%8C)
-    * [AD持久化](#ad%E6%8C%81%E4%B9%85%E5%8C%96)
-      * [活动目录持久性技巧](#%E6%B4%BB%E5%8A%A8%E7%9B%AE%E5%BD%95%E6%8C%81%E4%B9%85%E6%80%A7%E6%8A%80%E5%B7%A7)
-      * [Security Support Provider](#security-support-provider)
-      * [SID History](#sid-history)
-      * [AdminSDHolder＆SDProp](#adminsdholdersdprop-)
-      * [组策略](#%E7%BB%84%E7%AD%96%E7%95%A5)
-      * [Hook PasswordChangeNotify](#hook-passwordchangenotify)
-      * [Kerberoasting后门](#Kerberoasting%E5%90%8E%E9%97%A8)
-      * [AdminSDHolder](#AdminSDHolder)
-      * [Delegation](#Delegation)
-    * [TIPS](#tips)
-    * [相关工具](#%E7%9B%B8%E5%85%B3%E5%B7%A5%E5%85%B7)
-  * [在远程系统上执行程序](#%E5%9C%A8%E8%BF%9C%E7%A8%8B%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F)
-  * [IOT相关](#iot%E7%9B%B8%E5%85%B3)
-  * [中间人](#%E4%B8%AD%E9%97%B4%E4%BA%BA)
-  * [规避杀软及检测](#%E8%A7%84%E9%81%BF%E6%9D%80%E8%BD%AF%E5%8F%8A%E6%A3%80%E6%B5%8B)
-    * [Bypass Applocker](#bypass-applocker)
-    * [bypassAV](#bypassav)
-* [痕迹清理](#%E7%97%95%E8%BF%B9%E6%B8%85%E7%90%86)
-  * [Windows日志清除](#windows%E6%97%A5%E5%BF%97%E6%B8%85%E9%99%A4)
-  * [破坏Windows日志记录功能](#%E7%A0%B4%E5%9D%8Fwindows%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%8A%9F%E8%83%BD)
-  * [msf](#msf)
-  * [3389登陆记录清除](#3389%E7%99%BB%E9%99%86%E8%AE%B0%E5%BD%95%E6%B8%85%E9%99%A4)
-
-
 ## 信息搜集 
 ### 开源情报信息收集（OSINT） 
 #### github 
@@ -1311,6 +1151,32 @@ Get-NetFiles - gets open files on a server
 Get-NetProcesses - gets the remote processes and owners on a remote server
 ```
 ##### BloodHound
+
+**获取某OU下所有机器信息**
+```
+{
+            "name": "Find the specificed OU computers",
+            "queryList": [
+                {
+                    "final": false,
+                    "title": "Select a OU...",
+                    "query": "MATCH (n:OU) RETURN distinct n.name ORDER BY n.name DESC"
+                },
+                {
+                    "final": true,
+                    "query": "MATCH (m:OU  {name: $result}) with m MATCH p=(o:OU {objectid: m.objectid})-[r:Contains*1..]->(n:Computer) RETURN p",
+                    "allowCollapse": true,
+                    "endNode": "{}"
+                }
+            ]
+        }
+```
+
+**自动标记owned用户及机器**
+
+[SyncDog](https://github.com/Lz1y/SyncDog)
+
+
 ##### 获取域内DNS信息
 * [adidnsdump](https://github.com/dirkjanm/adidnsdump)
 * [域渗透——DNS记录的获取](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-DNS%E8%AE%B0%E5%BD%95%E7%9A%84%E8%8E%B7%E5%8F%96/)
@@ -1475,6 +1341,18 @@ http://www.vuln.cn/6812
 
 ##### Delegation
 [Unconstrained Domain Persistence](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html#unconstrained-domain-persistence)
+
+#### 其他
+##### 域内主机提权
+[SharpAddDomainMachine](https://github.com/Ridter/SharpAddDomainMachine
+)
+##### Exchange的利用
+* [**Exchange2domain**](https://github.com/Ridter/Exchange2domain)
+* [**CVE-2018-8581**](https://github.com/WyAtu/CVE-2018-8581/)
+* [**CVE-2019-1040**](https://github.com/Ridter/CVE-2019-1040) 
+* [**CVE-2020-0688**](https://github.com/Ridter/CVE-2020-0688)
+* [**NtlmRelayToEWS**](https://github.com/Arno0x/NtlmRelayToEWS)
+* [**ewsManage**](https://github.com/3gstudent/ewsManage)
 
 #### TIPS 
 [《域渗透——Dump Clear-Text Password after KB2871997 installed》](https://github.com/3gstudent/Dump-Clear-Password-after-KB2871997-installed)
