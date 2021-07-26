@@ -229,11 +229,12 @@ Table of Contents
 * 站长帮手links等在线查询网站 
 * 域传送漏洞 
 
->Linux
+>
+Linux
 ```
 dig @ns.example.com example=.com AXFR 
 ```
->Windows
+Windows
 ```
 nslookup -type=ns xxx.yyy.cn #查询解析某域名的DNS服务器
 nslookup #进入nslookup交互模式
@@ -1458,6 +1459,19 @@ tgsrepcrack.py wordlist.txt 1-MSSQLSvc~sql01.medin.local~1433-MYDOMAIN.LOCAL.kir
  * [One API call away from Domain Admin](https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/)
  * [privexchange](https://github.com/dirkjanm/privexchange/)
  * [Exchange2domain](https://github.com/ridter/exchange2domain)
+
+用于主动让目标机器发起NTLM请求的方法：
+* [printerbug](https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py)
+* [PetitPotam](https://github.com/topotam/PetitPotam)
+
+Relay LDAP:
+
+ * [CVE-2019-1040-dcpwn](https://github.com/Ridter/CVE-2019-1040-dcpwn)
+
+Relay AD CS/PKI:
+
+* [AD CS/PKI template exploit](https://www.bussink.net/ad-cs-exploit-via-petitpotam-from-0-to-domain-domain/)
+
 
 ##### Kerberos委派
  * [Wagging-the-Dog.html](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
