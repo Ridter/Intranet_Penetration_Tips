@@ -149,6 +149,7 @@ Table of Contents
             * [Kerberoasting后门](#kerberoasting后门)
             * [AdminSDHolder](#adminsdholder)
             * [Delegation](#delegation)
+            * [黄金证书](#黄金证书)
         * [其他](#其他)
             * [域内主机提权](#域内主机提权)
             * [Exchange的利用](#exchange的利用)
@@ -1472,6 +1473,11 @@ Relay AD CS/PKI:
 
 * [AD CS/PKI template exploit](https://www.bussink.net/ad-cs-exploit-via-petitpotam-from-0-to-domain-domain/)
 
+集成几个利用的工具：
+* [Relayx](https://github.com/Ridter/Relayx)
+
+内网445端口转发：
+* [PortBender](https://github.com/praetorian-inc/PortBender)
 
 ##### Kerberos委派
  * [Wagging-the-Dog.html](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
@@ -1611,6 +1617,12 @@ http://www.vuln.cn/6812
 
 ##### Delegation
 [Unconstrained Domain Persistence](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html#unconstrained-domain-persistence)
+
+##### 黄金证书
+[certified-pre-owned](http://www.harmj0y.net/blog/activedirectory/certified-pre-owned/)
+
+证书伪造：
+[pyForgeCert](https://github.com/Ridter/pyForgeCert)
 
 #### 其他
 ##### 域内主机提权
