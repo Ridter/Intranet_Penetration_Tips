@@ -1379,7 +1379,7 @@ https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993
 ##### SYSVOL 
 SYSVOL是指存储域公共文件服务器副本的共享文件夹，它们在域中所有的域控制器之间复制。 Sysvol文件夹是安装AD时创建的，它用来存放GPO、Script等信息。同时，存放在Sysvol文件夹中的信息，会复制到域中所有DC上。 
 相关阅读: 
-* [寻找SYSVOL里的密码和攻击GPP（组策略偏好） ](http://www.freebuf.com/vuls/92016.html)
+* [寻找SYSVOL里的密码和攻击GPP（组策略偏好） ](https://www.secpulse.com/archives/42175.html)
 * [Windows Server 2008 R2之四管理Sysvol文件夹 ](http://blog.51cto.com/ycrsjxy/203095)
 * [SYSVOL中查找密码并利用组策略首选项 ](https://adsecurity.org/?p=2288)
 * [利用SYSVOL还原组策略中保存的密码](https://xz.aliyun.com/t/1653) 
