@@ -188,7 +188,7 @@ Table of Contents
 * 虎妈查:http://www.whomx.com/
 * 历史漏洞查询 :
     * 在线查询:http://wy.zone.ci/
-    * 自搭建:https://github.com/hanc00l/wooyun_publi/
+    * 自搭建:https://github.com/hanc00l/wooyun_public/
 
 #### google hacking 
 
@@ -1484,10 +1484,10 @@ Relay AD CS/PKI:
 
 ##### Kerberos委派
  * [Wagging-the-Dog.html](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
- * [s4u2pwnage](https://www.harmj0y.net/blog/activedirectory/s4u2pwnage/)
+ * [s4u2pwnage](https://blog.harmj0y.net/activedirectory/s4u2pwnage/)
  * [Attacking Kerberos Delegation](https://xz.aliyun.com/t/2931)
  * [用打印服务获取域控](https://adsecurity.org/?p=4056)
- * [Computer Takeover](https://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
+ * [Computer Takeover](https://blog.harmj0y.net/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
  * [Combining NTLM Relaying and Kerberos delegation](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
  * [CVE-2019-1040](https://dirkjanm.io/exploiting-CVE-2019-1040-relay-vulnerabilities-for-rce-and-domain-admin/)
 
@@ -1678,7 +1678,7 @@ http://www.vuln.cn/6812
 [Unconstrained Domain Persistence](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html#unconstrained-domain-persistence)
 
 ##### 黄金证书
-[certified-pre-owned](http://www.harmj0y.net/blog/activedirectory/certified-pre-owned/)
+[certified-pre-owned](https://blog.harmj0y.net/activedirectory/certified-pre-owned/)
 
 证书伪造：
 [pyForgeCert](https://github.com/Ridter/pyForgeCert)
