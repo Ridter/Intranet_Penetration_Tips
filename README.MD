@@ -1697,6 +1697,8 @@ http://www.vuln.cn/6812
 * [**ewsManage**](https://github.com/3gstudent/ewsManage)
 * [**CVE-2021-26855**](https://github.com/h4x0r-dz/CVE-2021-26855)
 * [**CVE-2021-28482**](https://gist.github.com/testanull/9ebbd6830f7a501e35e67f2fcaa57bda)
+* [**ProxyVulns**](https://github.com/hosch3n/ProxyVulns)
+* [**ProxyNotShell**](https://github.com/testanull/ProxyNotShell-PoC)
 
 #### TIPS 
 [《域渗透——Dump Clear-Text Password after KB2871997 installed》](https://github.com/3gstudent/Dump-Clear-Password-after-KB2871997-installed)
